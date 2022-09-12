@@ -1,0 +1,12 @@
+@mixin h2{
+  font-size: 30px;
+  font-family: 'Source Code Pro', monospace;
+  color:#c42e87;
+}
+
+@mixin p{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  
+}

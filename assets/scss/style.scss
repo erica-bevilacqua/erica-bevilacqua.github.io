@@ -1,4 +1,4 @@
-// @import"transitions";
+@import"mixin";
 
 *{
   box-sizing: border-box;
@@ -76,11 +76,39 @@
       color: #c42e87;
       font-family: 'Source Code Pro', monospace;
       position: absolute;
-      top:60%;
+      top:70%;
       left:50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-70%, -50%);
       padding-top: 20px;
-      animation: line_grow 7s infinite ease-in-out;
     }
   }
+}
+
+.container-biografia{
+  width: 80%;
+  height: 50vh;
+  position: relative;
+  margin: auto;
+}
+.about-me{
+
+  width: 50%;
+  height: 50vh;
+  margin-top: 15px;
+  h2{
+    @include h2;
+    padding-bottom: 20px;
+  }
+  p{
+    @include p;
+  }
+}
+
+.img-bio{
+  width: 50%;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+
 }
